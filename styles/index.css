@@ -72,8 +72,31 @@
   align-items: center;
   justify-content: center;
   position:relative;
+  animation: load 3s;
   /* transform:scale(1.2); */
 }
+
+@keyframes load{
+  from{
+    opacity:0;
+    transform:scale(0);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+@keyframes load2{
+  from{
+    opacity:0;
+    transform:scale(100);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
 .name{
   display:flex;
   justify-content: flex-start;
@@ -130,6 +153,7 @@
   flex-direction: column;
   padding-top:50px;
   gap:10px;
+  animation:load2 2s ease-in-out;
 }
 .row{
   display:flex;
