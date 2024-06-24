@@ -5,18 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator By Rhishav</title>
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
 </head>
 <body class="body">
   <div class="container">
-    
+    <div class="name">RHISHAV</div>
+    <div id = "status" class="status">Watching</div>
     <div class="display">
-      <input type="text" class="display1" name="display1">
-      <input type="text" class="display2" name="display2">
+      <input type="text" id="display1" name="display1">
+      <input type="text" id="display2" name="display2">
     </div>
     
     <div class="keys">
       <div class="row">
-        <button onclick="clearDisplay()" class="operator-button">AC</button>
+        <button onclick="clearDisplay()" class="all-clear">AC</button>
         <button onclick="backspace()" class="operator-button">Del</button>
         <button onclick="appendToDisplay('.')" class="operator-button">.</button>
         <button onclick="appendToDisplay('/')" class="operator-button">/</button>
@@ -42,7 +49,7 @@
       <div class="row">
         <button onclick="appendToDisplay('00')" class="numbers">00</button>
         <button onclick="appendToDisplay('0')" class="numbers">0</button>
-        <button onclick="calculate()" id="equals" class="operator-button">=</button>
+        <button onclick="calculate()" id="equals" class="equals">=</button>
       </div>
     </div>  
       
