@@ -6,9 +6,23 @@
   justify-content: center;
   align-items: center;
   height:100vh;
+  background-image: url(../images/simple-ui-for-a-calculator-in-a-2d-anime-style-wit-hFCUSBKHRrigsY0u5kPsQQ-ItqCZH5UTMKH6BNXjNyFOA.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 750px 850px;
+  border-radius:20px;
+  overflow:hidden;
+  background-color: rgb(17, 24, 21);
+  position: relative;
 }
-
-.container{
+.left{
+  position:absolute;
+  color:white;
+  top:0px;
+  left:0px;
+  font-family:poppins;
+}
+.calculator{
   width:300px;
   height:600px;
   background-image: url("../images/calculator.png");
@@ -38,10 +52,10 @@
   display:flex;
   justify-content: flex-start;
   position: absolute;
-  top:80px;
-  right:42px;
-  font-family:arial;
-  font-weight:700;
+  top:78px;
+  right:40px;
+  font-family: poppins;
+  font-weight:500;
   font-size:14px;
   color:rgba(255, 213, 151, 0.596);
   background-color: rgba(128, 128, 128, 0);
@@ -87,12 +101,14 @@
   width:50px;
   height:50px;
   font-size:18px;
+  font-family: poppins;
+  font-weight:500;
   color:white;
   border:none;
   border-radius:10px;
   background-color: rgb(85, 194, 179);
   box-shadow: inset rgba(238, 238, 238, 0.54) -2px 2px  8px,
-  inset rgba(18, 71, 54, 0.54) 3px -3px  3px,
+  inset rgba(18, 71, 54, 0.44) 3px -3px 3px,
    rgba(0, 0, 0, 0.3) -4px 6px 8px;
   transition: 0.1s;
 }
@@ -106,6 +122,8 @@
   height:50px;
   font-size:18px;
   color:white;
+  font-family: poppins;
+  font-weight:500;
   border:none;
   border-radius:10px;
   background-color: rgb(221, 181, 106);
@@ -119,6 +137,8 @@
   height:50px;
   font-size:18px;
   color:white;
+  font-family: poppins;
+  font-weight:500;
   border:none;
   border-radius:10px;
   background-color: rgb(221, 143, 106);
@@ -132,6 +152,8 @@
   height:50px;
   font-size:18px;
   color:white;
+  font-family: poppins;
+  font-weight:500;
   border:none;
   border-radius:10px;
   background-color: rgb(106, 221, 164);
