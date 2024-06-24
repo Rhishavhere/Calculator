@@ -6,20 +6,49 @@
   <title>Calculator By Rhishav</title>
   <link rel="stylesheet" href="styles/index.css">
 </head>
-<body>
-  
-  <div class="board">
+<body class="body">
+  <div class="container">
     
-    <div class="top">
-      <div class="header">welcome</div>
-      <div class="history">124 * 56</div>
-      <div class="result">6944</div>
+    <div class="display">
+      <input type="text" class="display1" name="display1">
+      <input type="text" class="display2" name="display2">
     </div>
     
-    <div class="bottom">
-      <button class="operations">C</button>
-    </div>
+    <div class="keys">
+      <div class="row">
+        <button onclick="clearDisplay()" class="operator-button">AC</button>
+        <button onclick="backspace()" class="operator-button">Del</button>
+        <button onclick="appendToDisplay('.')" class="operator-button">.</button>
+        <button onclick="appendToDisplay('/')" class="operator-button">/</button>
+      </div>
+      <div class="row">
+        <button onclick="appendToDisplay('7')" class="numbers">7</button>
+        <button onclick="appendToDisplay('8')" class="numbers">8</button>
+        <button onclick="appendToDisplay('9')" class="numbers">9</button>
+        <button onclick="appendToDisplay('*')" class="operator-button">x</button>
+      </div>
+      <div class="row">
+        <button onclick="appendToDisplay('4')" class="numbers">4</button>
+        <button onclick="appendToDisplay('5')" class="numbers">5</button>
+        <button onclick="appendToDisplay('6')" class="numbers">6</button>
+        <button onclick="appendToDisplay('-')" class="operator-button">-</button>
+      </div>
+      <div class="row">
+        <button onclick="appendToDisplay('1')" class="numbers">1</button>
+        <button onclick="appendToDisplay('2')" class="numbers">2</button>
+        <button onclick="appendToDisplay('3')" class="numbers">3</button>
+        <button onclick="appendToDisplay('+')" class="operator-button">+</button>
+      </div>
+      <div class="row">
+        <button onclick="appendToDisplay('00')" class="numbers">00</button>
+        <button onclick="appendToDisplay('0')" class="numbers">0</button>
+        <button onclick="calculate()" id="equals" class="operator-button">=</button>
+      </div>
+    </div>  
+      
   </div>
+  
+  <script src="index.js"></script>
 
 </body>
 </html>
