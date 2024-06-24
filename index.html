@@ -40,22 +40,22 @@
         <button onclick="appendToDisplay('7')" class="numbers">7</button>
         <button onclick="appendToDisplay('8')" class="numbers">8</button>
         <button onclick="appendToDisplay('9')" class="numbers">9</button>
-        <button onclick="appendToDisplay('*')" class="operator-button">x</button>
+        <button onclick="appendToDisplay('*')" id="multi"  data-state="multiply" class="operator-button">x</button>
       </div>
       <div class="row">
         <button onclick="appendToDisplay('4')" class="numbers">4</button>
         <button onclick="appendToDisplay('5')" class="numbers">5</button>
         <button onclick="appendToDisplay('6')" class="numbers">6</button>
-        <button onclick="appendToDisplay('-')" class="operator-button">-</button>
+        <button onclick="appendToDisplay('-')" id="sub" class="operator-button">-</button>
       </div>
       <div class="row">
         <button onclick="appendToDisplay('1')" class="numbers">1</button>
         <button onclick="appendToDisplay('2')" class="numbers">2</button>
         <button onclick="appendToDisplay('3')" class="numbers">3</button>
-        <button onclick="appendToDisplay('+')" class="operator-button">+</button>
+        <button onclick="appendToDisplay('+')" id="add" class="operator-button">+</button>
       </div>
       <div class="row">
-        <button onclick="appendToDisplay('00')" class="numbers">00</button>
+        <button onclick="toggle()"  id="toggle" class="numbers">More</button>
         <button onclick="appendToDisplay('0')" class="numbers">0</button>
         <button onclick="calculate()" id="equals" class="equals">=</button>
       </div>

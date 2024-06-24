@@ -17,6 +17,7 @@
 }
 .left{
   position:absolute;
+  z-index:100;
   color:white;
   top:0px;
   left:0px;
@@ -34,6 +35,7 @@
   align-items: center;
   justify-content: center;
   position:relative;
+  /* transform:scale(1.2); */
 }
 .name{
   display:flex;
@@ -164,4 +166,7 @@
 }
 #equals{
   flex:2;
+}
+#toggle{
+  flex:1.4;
 }
