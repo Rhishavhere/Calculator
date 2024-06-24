@@ -43,13 +43,22 @@
   font-family:tiny5;
   font-size:20px;
 }
-.history{
+#history{
   margin-top:50px;
-  width:30px;
   font-size:14px;
   font-family:poppins;
   color:rgba(255, 255, 255, 0.322);
   
+}
+#erase{
+  border:none;
+  border-radius:40px;
+  margin: 0px 10px 0px 10px;
+  background-color:rgba(145, 255, 204, 0.603);
+  color:rgb(238, 238, 238);
+  font-family:poppins;
+  padding:0px 10px 0px 10px;
+  cursor: pointer;
 }
 .calculator{
   width:300px;

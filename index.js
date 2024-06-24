@@ -1,16 +1,24 @@
 const display2 = document.getElementById("display2");
 const display1 = document.getElementById("display1");
-let isClicked=false;
+const status = document.getElementById("status");
+const history = document.getElementById("history");
+
+const audio=new Audio();
+audio.src="tap.mp3";
+
+function clearHistory(){
+  history.innerText="";
+}
+
+function toggle(){
+  status.innerText="Soon!"
+}
 
 function appendToDisplay(input){
-  if(isClicked){
-    display2.value=Math.log(display2.value);
-  }
-  else{
-    display2.value += input;
-    audio.play();
-  }
+  display2.value += input;
+  audio.play();
 }
+
 
 function clearDisplay(input){
   display2.value ="";
@@ -24,11 +32,12 @@ function backspace(input) {
   audio.play();
 }
 
-function calculate(input){
+function calculate(){
   audio.play();
   display1.value = display2.value;
   try{
     display2.value = eval(display2.value);
+    history.innerText+=display1.value+" = "+display2.value+"\n";
   }
   catch(error){
     display2.value = "Error";
@@ -45,19 +54,3 @@ function calculate(input){
     status.innerText="bro relax!"
   }
 }
-
-const toggle=()=>{
-  let multi =document.getElementById("multi");
-  
-  if(!isClicked){
-    multi.innerText="Ln"
-    isClicked=true;
-  }
-  else{
-    multi.innerText="x"
-    isClicked=false;
-  }
-}
-
-const audio=new Audio();
-audio.src="tap.mp3";
