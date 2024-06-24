@@ -1,4 +1,5 @@
 .body{
+  min-width:800px;
   margin:0;
   padding:0;
   box-sizing : border-box;
@@ -6,9 +7,6 @@
   justify-content: center;
   align-items: center;
   height:100vh;
-  background-image: url(../images/simple-ui-for-a-calculator-in-a-2d-anime-style-wit-hFCUSBKHRrigsY0u5kPsQQ-ItqCZH5UTMKH6BNXjNyFOA.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 750px 850px;
   border-radius:20px;
   overflow:hidden;
@@ -16,14 +14,43 @@
   position: relative;
 }
 .left{
+  margin-left:10%;
   position:absolute;
   z-index:100;
   color:white;
-  top:0px;
-  left:0px;
+  top:30%;
+  left:10%;
+  font-family:tiny5;
+  font-size:20px;
+}
+.tips{
+  margin-top:50px;
+  width:30px;
+  font-size:14px;
   font-family:poppins;
+  color:rgba(255, 255, 255, 0.322);
+  
+}
+.right{
+  margin-left:10%;
+  position:absolute;
+  z-index:100;
+  color:white;
+  top:30%;
+  right:10%;
+  font-family:tiny5;
+  font-size:20px;
+}
+.history{
+  margin-top:50px;
+  width:30px;
+  font-size:14px;
+  font-family:poppins;
+  color:rgba(255, 255, 255, 0.322);
+  
 }
 .calculator{
+  margin-left:10%;
   width:300px;
   height:600px;
   background-image: url("../images/calculator.png");
