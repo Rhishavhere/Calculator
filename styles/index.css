@@ -22,6 +22,7 @@
   left: 5%;
   font-family: tiny5;
   font-size: 20px;
+  animation: load 2s;
 }
 
 .tips {
@@ -47,6 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: load 2s;
 }
 
 #history {
@@ -97,17 +99,14 @@
 
 @keyframes load2 {
   0% {
-    opacity: 1;
     transform: scale(0);
   }
 
-  50% {
-    opacity: 0;
-    transform: scale(150%);
+  70% {
+    transform: scale(120%);
   }
 
   100% {
-    opacity: 1;
     transform: scale(100%);
   }
 }
@@ -270,7 +269,15 @@
 }
 
 #more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1.4;
+}
+
+#more a {
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width:600px) {
