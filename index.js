@@ -3,6 +3,7 @@ const display1 = document.getElementById("display1");
 const status = document.getElementById("status");
 const history = document.getElementById("history");
 
+
 const audio=new Audio();
 audio.src="tap.mp3";
 
