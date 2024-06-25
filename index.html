@@ -22,52 +22,54 @@
     <p class="tips">Click on more for some fun</p>
   </div>
   <div class="right">
-    <p class>HISTORY</p>
+    <p>HISTORY</p>
     <button id="erase" onclick="clearHistory()">Erase</button>
     <p id="history"></p>
   </div>
-
-  <div class="calculator">
-    <div class="name">RHISHAV</div>
-    <div id = "status" class="status">Watching</div>
-    <div class="display">
-      <input type="text" id="display1" name="display1">
-      <input type="text" id="display2" name="display2">
-    </div>
-    
-    <div class="keys">
-      <div class="row">
-        <button style="--order:1" onclick="clearDisplay()" class="all-clear">AC</button>
-        <button style="--order:2" onclick="backspace()" class="operator-button">Del</button>
-        <button style="--order:3" onclick="appendToDisplay('.')" class="operator-button">.</button>
-        <button style="--order:4" onclick="appendToDisplay('/')" class="operator-button">/</button>
+  <div class="container">
+    <div class="calculator">
+      <div class="name">RHISHAV</div>
+      <div id = "status" class="status">Watching</div>
+      <div class="display">
+        <input type="text" id="display1" name="display1">
+        <input type="text" id="display2" name="display2">
       </div>
-      <div class="row">
-        <button style="--order:5" onclick="appendToDisplay('7')" class="numbers">7</button>
-        <button style="--order:6" onclick="appendToDisplay('8')" class="numbers">8</button>
-        <button style="--order:7" onclick="appendToDisplay('9')" class="numbers">9</button>
-        <button style="--order:8" onclick="appendToDisplay('*')" id="multi" class="operator-button">x</button>
-      </div>
-      <div class="row">
-        <button style="--order:9" onclick="appendToDisplay('4')" class="numbers">4</button>
-        <button style="--order:10" onclick="appendToDisplay('5')" class="numbers">5</button>
-        <button style="--order:11" onclick="appendToDisplay('6')" class="numbers">6</button>
-        <button style="--order:12" onclick="appendToDisplay('-')" id="sub" class="operator-button">-</button>
-      </div>
-      <div class="row">
-        <button style="--order:13" onclick="appendToDisplay('1')" class="numbers">1</button>
-        <button style="--order:14" onclick="appendToDisplay('2')" class="numbers">2</button>
-        <button style="--order:15" onclick="appendToDisplay('3')" class="numbers">3</button>
-        <button style="--order:16" onclick="appendToDisplay('+')" id="add" class="operator-button">+</button>
-      </div>
-      <div class="row">
-        <button style="--order:17" onclick="more()"  id="more" class="numbers">More</button>
-        <button style="--order:18" onclick="appendToDisplay('0')" class="numbers">0</button>
-        <button style="--order:19" onclick="calculate()" id="equals" class="equals">=</button>
-      </div>
-    </div>  
       
+      <div class="keys">
+        <div class="row">
+          <button style="--order:1" onclick="clearDisplay()" class="all-clear">AC</button>
+          <button style="--order:2" onclick="backspace()" class="operator-button">Del</button>
+          <button style="--order:3" onclick="appendToDisplay('.')" class="operator-button">.</button>
+          <button style="--order:4" onclick="appendToDisplay('/')" class="operator-button">/</button>
+        </div>
+        <div class="row">
+          <button style="--order:5" onclick="appendToDisplay('7')" class="numbers">7</button>
+          <button style="--order:6" onclick="appendToDisplay('8')" class="numbers">8</button>
+          <button style="--order:7" onclick="appendToDisplay('9')" class="numbers">9</button>
+          <button style="--order:8" onclick="appendToDisplay('*')" id="multi" class="operator-button">x</button>
+        </div>
+        <div class="row">
+          <button style="--order:9" onclick="appendToDisplay('4')" class="numbers">4</button>
+          <button style="--order:10" onclick="appendToDisplay('5')" class="numbers">5</button>
+          <button style="--order:11" onclick="appendToDisplay('6')" class="numbers">6</button>
+          <button style="--order:12" onclick="appendToDisplay('-')" id="sub" class="operator-button">-</button>
+        </div>
+        <div class="row">
+          <button style="--order:13" onclick="appendToDisplay('1')" class="numbers">1</button>
+          <button style="--order:14" onclick="appendToDisplay('2')" class="numbers">2</button>
+          <button style="--order:15" onclick="appendToDisplay('3')" class="numbers">3</button>
+          <button style="--order:16" onclick="appendToDisplay('+')" id="add" class="operator-button">+</button>
+        </div>
+        <div class="row">
+          <button style="--order:17" onclick="more()"  id="more" class="numbers">More</button>
+          <button style="--order:18" onclick="appendToDisplay('0')" class="numbers">0</button>
+          <button style="--order:19" onclick="calculate()" id="equals" class="equals">=</button>
+        </div>
+      </div>  
+        
+    </div>
   </div>
+  
   
   <script src="index.js"></script>
 
