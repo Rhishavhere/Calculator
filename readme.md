@@ -1,1 +1,1 @@
-Cartoony simple calcutor with some added functions
+Responsive simple calcutor with some added functions
